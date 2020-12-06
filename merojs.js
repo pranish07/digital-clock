@@ -2,14 +2,14 @@ let hour = document.getElementById("hrs");
 let minute = document.getElementById("min");
 let second = document.getElementById("sec");
 
-//setting up the value for hour minute and second;
+//setting up the value for hour, minute and second;
 function clock() {
   let time = new Date();
   let hourTime = time.getHours();
   let minTime = time.getMinutes();
   let secTime = time.getSeconds();
 
-  var hrsTime = setHour(hourTime);
+  let hrsTime = setHour(hourTime);
   hour.innerText = hrsTime;
   minute.innerText = minTime;
   second.innerText = secTime;
